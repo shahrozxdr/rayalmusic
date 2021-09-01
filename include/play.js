@@ -136,7 +136,7 @@ module.exports = {
            const channel = message.member.voice.channel
       const newsong = new MessageEmbed()
         .setTitle(":gem: "+song.title)
-         .addField(" Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+        .addField(" Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
         .addField("Voice Channel 📣 :",channel.name)
         .addField("Text Channel 🗯️ :",message.channel.name)
@@ -146,6 +146,7 @@ module.exports = {
         .setImage(thumb)
         .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
+
       await playingMessage.react("⏭");
       await playingMessage.react("⏯");
       await playingMessage.react("🔉");
