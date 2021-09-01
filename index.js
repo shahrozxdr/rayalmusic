@@ -16,19 +16,6 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
 //this fires when the BOT STARTS DO NOT TOUCH
 
-client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("818792701356802048");
-  let embed = new MessageEmbed().setColor("#146DF6")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `✅ Join Server`)
-  .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${guild.owner}`)
-  .addField("🆔 **Server Id**", `${guild.id}`)
-  .addField("👥 **Member Count**", `${guild.memberCount}`)
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
-
 client.on(`ready`, () => {	
 //////////////
 
