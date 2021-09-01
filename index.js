@@ -96,9 +96,9 @@ client.on(`message`, async (message) => {
     .setTimestamp()
     .setDescription(`
 
-[{Support}](https://discord.gg/mwJmT7wkwn)
+[Support](https://discord.gg/mwJmT7wkwn)
 
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
+[Invite](https://discord.com/oauth2/authorize?client_id=876902868110696500&permissions=8&scope=bot)
 
 **{Developers Bot}** :
 Dev/Aquaman#5186
@@ -129,9 +129,9 @@ Online
     .setDescription (`
 <:emoji_3:822203003859107890> {Links}
 
-[{Support}](https://discord.gg/mwJmT7wkwn)
+[Support](https://discord.gg/mwJmT7wkwn)
 -
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)`)
+[Invite](https://discord.com/oauth2/authorize?client_id=876902868110696500&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
     .setTitle(`**{Support  RAYAL}**`) 
@@ -142,13 +142,6 @@ Online
     message.channel.send(embed)
     message.react("<:emoji_4:822203026776391711>")
   }
-
-client.on("guildCreate" , AQUAMAN => {
-  if(AQUAMAN.memberCount < 200){
-    console.log(`  name ( ${AQUAMAN.name} ) zhmaray memberakan ( ${AQUAMAN.memberCount}) created by AQUAMAN`)//by AQUAMAN
-    AQUAMAN.leave();
-  }
-})
 
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
