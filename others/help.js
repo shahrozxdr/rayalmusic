@@ -19,29 +19,22 @@ module.exports = {
     .setTitle(`**Rayal Help**`)
     .setDescription(`
 
-<a:discord:813406342173818910>**User Commands**<a:discord:813406342173818910>
+**User Commands**
 >>>>>>>>>>>>>
-<a:emoji_22:822512247561519124>\`!invite\` - \`!support\` - \`!about\`
-<a:emoji_22:822512247561519124>\`!ping\` - \`!prefix\` - \`!uptime\`
-<a:music:813460704031145986>**Music Commands**<a:music:813460704031145986>
->>>>>>><a:emoji_20:813716400408887316>>>>>>>>
-<a:dark:813714900777959444>\`!play\` - \`!skip\` - \`!skipto\`
-<a:dark:813714900777959444>\`!stop\` - \`!volume\` - \`!nowplaying\`
-<a:dark:813714900777959444>\`!shuffle\` - \`!search\` - \`!resume\`
-<a:dark:813714900777959444>\`!remove\` - \`!queue\` 
-<a:dark:813714900777959444>\`!loop\` - \`!lyrics\` - \`!radio\`
-<a:discord:813406342173818910>**Filter Commands**<a:discord:813406342173818910>
+\`+invite\` - \`+support\` - \`+about\`
+\`+ping\` - \`+prefix\` - \`+uptime\`
+**Music Commands**
+>>>>>>>>>>>>>>
+\`+play\` - \`+skip\` - \`+skipto\`
+\`+stop\` - \`+volume\` - \`+nowplaying\`
+\`+shuffle\` - \`+search\` - \`+resume\`
+\`+remove\` - \`+queue\` 
+\`+loop\` - \`+lyrics\` - \`+radio\`
 >>>>>>>>>>>>>
-<a:chap:814607523092103171>\`!filter bassboost\` - \`!filter 8D\`
-<a:chap:814607523092103171>\`!filter vaporwave\`-\`!filter tremolo\`
-<a:chap:814607523092103171>\`!filter phaser\` - \`!filter subboost\`
-<a:chap:814607523092103171>\`!filter nightcote\`-\`!filter pulsator\`
-<a:chap:814607523092103171>\`!filter vibrato\` - \`!filter clear\`
-<a:chap:814607523092103171>\`!filter surrounding\`
-**{[<a:links:813729922643263558>[Links}**
+**Links**
 >>>>>>>>>
-[{Support}](https://discord.gg/mwJmT7wkwn)
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
+[Support](https://discord.gg/mwJmT7wkwn)
+[Invite](https://discord.com/oauth2/authorize?client_id=876902868110696500&permissions=8&scope=bot)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("PURPLE");
