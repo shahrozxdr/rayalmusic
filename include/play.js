@@ -136,6 +136,7 @@ module.exports = {
            const channel = message.member.voice.channel
       const newsong = new MessageEmbed()
         .setTitle(":gem: "+song.title)
+         .addField(" Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
         .addField("Voice Channel 📣 :",channel.name)
         .addField("Text Channel 🗯️ :",message.channel.name)
