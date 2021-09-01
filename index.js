@@ -143,6 +143,7 @@ Online
     message.react("<:emoji_4:822203026776391711>")
   }
 
+
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
     //define saymsg
