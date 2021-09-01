@@ -91,7 +91,7 @@ client.on(`message`, async (message) => {
     const embed = new Discord.MessageEmbed()
     .setColor("PURPLE")
     .setAuthor("About Rayal Bot.", "https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png")
-    .setThumbnail(`https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png `)
+    .setThumbnail(` `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
@@ -127,7 +127,7 @@ Online
     const embed = new Discord.MessageEmbed()
     .setColor("PURPLE")
     .setDescription (`
-<:emoji_3:822203003859107890> {Links}
+**Links**
 
 [Support](https://discord.gg/mwJmT7wkwn)
 -
@@ -135,7 +135,7 @@ Online
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
     .setTitle(`**{Support  RAYAL}**`) 
-    .setThumbnail(`https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png `)
+    .setThumbnail(` `)
     .setTimestamp()
     
     //send the Message
