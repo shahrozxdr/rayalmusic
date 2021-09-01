@@ -15,7 +15,6 @@ const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
 //this fires when the BOT STARTS DO NOT TOUCH
-
 client.on(`ready`, () => {	
 //////////////
 
