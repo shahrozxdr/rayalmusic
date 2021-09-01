@@ -19,20 +19,18 @@ module.exports = {
     .setTitle(`**Rayal Help**`)
     .setDescription(`
 
-**User Commands**
->>>>>>>>>>>>>
-\`+invite\` - \`+support\` - \`+about\`
-\`+ping\` - \`+prefix\` - \`+uptime\`
-**Music Commands**
->>>>>>>>>>>>>>
-\`+play\` - \`+skip\` - \`+skipto\`
-\`+stop\` - \`+volume\` - \`+nowplaying\`
-\`+shuffle\` - \`+search\` - \`+resume\`
-\`+remove\` - \`+queue\` 
-\`+loop\` - \`+lyrics\` - \`+radio\`
->>>>>>>>>>>>>
+ |**User Commands**
+
+> \`invite . support . about . ping . prefix . uptime\`
+
+
+ |**Music Commands**
+> \`play . skip . skipto . stop . volume . nowplaying . shuffle . search . resume . remove . queue . loop . lyrics . radio\`
+
+
 **Links**
->>>>>>>>>
+
+
 [Support](https://discord.gg/mwJmT7wkwn)
 [Invite](https://discord.com/oauth2/authorize?client_id=876902868110696500&permissions=8&scope=bot)
 `)
