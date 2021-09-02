@@ -146,7 +146,6 @@ module.exports = {
          .addField(" Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField(" Time:", `\`${song.duration} Minutes\``, true)
         .addField(" Volume:", `\`100\``, true)
-        .addField(" Voice Channel :", `\`channel.name\``, true)
         .addField(" Text Channel :", `\`#${message.channel.name}\``, true)
        var playingMessage = await queue.textChannel.send(newsong);
       
