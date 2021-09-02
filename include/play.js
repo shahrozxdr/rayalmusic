@@ -20,8 +20,8 @@ module.exports = {
     if (!song) {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
-      const endembed = new MessageEmbed().setColor("PURPLE")
-        .setAuthor(`Music Queue ended.`, "")
+      const endembed = new MessageEmbed().setColor("#FB0505")
+        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/attachments/829525198872248320/836786912152911954/813505072704913419.gif")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
@@ -131,22 +131,25 @@ module.exports = {
     if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
     else thumb = song.thumbnail.url;
 
-  try {
-      let embed = new MessageEmbed()
-           const channel = message.member.voice.channel
+    try {
       const newsong = new MessageEmbed()
-        .setTitle(":gem: "+song.title)
-        .addField(" Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
-        .addField("Time ⏱ :", `\`${song.duration} Minutes\``, true)
-        .addField("Voice Channel 📣 :",channel.name)
-        .addField("Text Channel 🗯️ :",message.channel.name)
-        .addField("Voulome ❄️ :",100)
+       .setTitle(" "+song.title)
         .setURL(song.url)
-        .setColor("#146DF6")
+        .setColor("#FB0505")
         .setImage(thumb)
-        .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-      var playingMessage = await queue.textChannel.send(newsong);
-
+        .setAuthor(`Play Now Music...`, `https://images-ext-2.discordapp.net/external/1Kdtwt7hRDBEovhXhYQYtR-_gRwM4X_yyuwMh27J40M/%3Fsize%3D1024/https/cdn.discordapp.com/icons/716788176731242538/a_d6a5096c3a35d162de3772c0f6495ecf.gif`)
+        .setDescription (`   
+    
+        __[Support](https://discord.gg/mwJmT7wkwn)__ - __[Invite](https://discord.com/api/oauth2/authorize?client_id=876902868110696500&permissions=8&scope=bot)__ - __[vote](https://top.gg/bot/876902868110696500)__ - __[Website](https://grizzly-precious-spur.glitch.me/)__
+`)      
+         .addField("• ──────  ────── •")
+         .addField(" Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+        .addField(" Time:", `\`${song.duration} Minutes\``, true)
+        .addField(" Volume:", `\`100\``, true)
+        .addField(" Voice Channel :",channel.name)
+        .addField(" Text Channel :", `\`#${message.channel.name}\``, true)
+       var playingMessage = await queue.textChannel.send(newsong);
+      
       await playingMessage.react("⏭");
       await playingMessage.react("⏯");
       await playingMessage.react("🔉");
@@ -292,10 +295,10 @@ module.exports = {
         const left = ms - seek;
         //define embed
         let nowPlaying = new MessageEmbed()
-          .setAuthor('<a:waya:813455060864073788> Now playing')
+          .setAuthor('Now playing')
           .setDescription(`[${song.title}](${song.url})`)
           .setThumbnail(song.thumbnail.url)
-          .setColor("#146DF6")
+          .setColor("#FB0505")
           .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       //if its a stream
       if(ms >= 10000) {
@@ -318,7 +321,7 @@ module.exports = {
           let queueEmbed = new MessageEmbed()
             .setTitle("Music Queue")
             .setDescription(description)
-            .setColor("#146DF6")
+            .setColor("#FB0505")
              ;
       
           const splitDescription = splitMessage(description, {
@@ -342,8 +345,8 @@ module.exports = {
           if (!canModifyQueue(member)) return;
           let lyrics = null;
           let temEmbed = new MessageEmbed()
-          .setAuthor("Searching...", "https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif").setFooter("Lyrics")
-          .setColor("#146DF6")
+          .setAuthor("Searching...", "https://images-ext-2.discordapp.net/external/1Kdtwt7hRDBEovhXhYQYtR-_gRwM4X_yyuwMh27J40M/%3Fsize%3D1024/https/cdn.discordapp.com/icons/716788176731242538/a_d6a5096c3a35d162de3772c0f6495ecf.gif").setFooter("Lyrics")
+          .setColor("#FB0505")
           let result = await message.channel.send(temEmbed)
           try {
             lyrics = await lyricsFinder(queue.songs[0].title,"");
@@ -355,7 +358,7 @@ module.exports = {
           let lyricsEmbed = new MessageEmbed()
             .setTitle("🗒️ Lyrics")
             .setDescription(lyrics)
-            .setColor("#146DF6")
+            .setColor("#FB0505")
       
           if (lyricsEmbed.description.length >= 2048)
       
